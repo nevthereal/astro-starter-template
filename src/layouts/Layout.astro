@@ -29,9 +29,10 @@ const { title } = Astro.props;
     />
     <title>{title}</title>
   </head>
+  <!-- You can add or remove the tailwind classes here below or tweak the daisy ui theme -->
   <body
     data-theme='night'
-    class='prose-headings:font-[anybody] prose-headings:font-bold'
+    class='prose-headings:font-[anybody] prose-headings:font-bold text-center m-8'
   >
     <slot />
   </body>
