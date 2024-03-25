@@ -1,3 +1,8 @@
 {
-  "extends": "astro/tsconfigs/strict"
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    "@components/*": ["./src/components/*"],
+    "@assets/*": ["./src/assets/*"],
+    "@layouts/*": ["./src/layouts/*"]
+  }
 }
