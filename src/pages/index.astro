@@ -1,28 +1,125 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import 'aos/dist/aos.css';
 ---
 
-<Layout title='Welcome to Astro.'>
-  <main class='prose mx-auto mt-16'>
-    <h1>Hello World</h1>
-    <h2>About this template</h2>
-    <p>This is a simple starter setup utilizing:</p>
-    <ul>
-      <li><a href='https://daisyui.com'>Daisy UI</a></li>
-      <li><a href='https://daisyui.com'>Tailwind CSS</a></li>
-    </ul>
-    <p>This template is fully <code>typesafe</code>.</p>
-    <h2>Path Aliases:</h2>
-    <li>
-      <code>@components/*</code> path alias goes to <code
-        >./src/components/*</code
-      >
-    </li>
-    <li>
-      <code>@assets/*</code> path alias goes to <code>./src/assets/*</code>
-    </li>
-    <li>
-      <code>@layouts/*</code> path alias goes to <code>./src/layouts/*</code>
-    </li>
+<Layout title='WebWanniassa'>
+  <main class='prose w-[100vw] bg-white'>
+    <div class="navbar bg-base-100 w-[100vw]">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-xl no-underline text-secondary">Web Wanniassa</a>
+      </div>
+    </div>
+    <div class="hero w-[100vw] min-h-screen">
+      <div class="hero-content flex-col lg:flex-row">
+        <div class="mr-10" data-aos="fade-up" data-aos-delay="500">
+          <h1 class="text-5xl font-bold">Canberra's Leading Website Design Agency</h1>
+          <p class="text-2xl">
+            Get a custom designed, high-speed, responsive website with a modern design that <b>actually</b> helps your business' bottom line
+          </p>
+        </div>
+        <form class="max-w-lg m-5 bg-gray-100 p-10 rounded-lg" data-aos="fade-up" data-aos-delay="500" action="https://api.web3forms.com/submit" method="POST">
+          <h1>Get Your Free Quote Today</h1>
+          <input type="hidden" name="access_key" value="2c81c047-2e38-410e-b70e-6644293a0009">
+          <label class="input input-bordered flex items-center gap-2 mt-5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              class="h-4 w-4 opacity-70">
+              <path
+                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" />
+            </svg>
+            <input type="text" class="grow" placeholder="Your Name" name="name"/>
+          </label>
+          <label class="input input-bordered flex items-center gap-2 mt-5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              class="h-4 w-4 opacity-70">
+              <path
+                d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z" />
+              <path
+                d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
+            </svg>
+            <input type='email' class="grow" placeholder="Email" name="email"/>
+          </label>
+          <textarea class="textarea textarea-bordered min-w-96 mt-5" placeholder="Your Message" name="message"></textarea>
+          <button class="btn btn-secondary mt-5">Send</button>
+        </form>
+      </div>
+    </div>
+    <div class="hero w-[100vw] min-h-[40vh] my-24">
+      <div class="hero-content text-center">
+        <div class="max-w-lg" >
+          <h1 class="text-5xl font-bold text-secondary" data-aos="fade-up" data-aos-delay="200">About Us</h1>
+          <p data-aos="fade-up" data-aos-delay="300">
+            Web Wanniassa is focused to helping small businesses in the Canberra region. We provide an emphasis on a website having a goal, a meaning for existing.
+            This means that every website that you see from us helps you convert potential customers into paying patrons.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 justify-center place-items-center content-center w-[100vw] lg:grid-cols-3">
+      <div class="card bg-base-100 w-96 shadow-xl" data-aos="fade-up" data-aos-delay="200">
+        <div class="card-body">
+          <h2 class="card-title">Easy To Work With</h2>
+          <p>Wanniassa Web took the stress out of building our website. They listened to what we wanted and delivered a site that looks great and is easy for us to update.</p>
+          <div class="card-actions justify-end">
+            <p>- Alex Jackson <i class="fa-solid fa-star text-secondary ml-2"></i><i class="fa-solid fa-star text-secondary"></i><i class="fa-solid fa-star text-secondary"></i><i class="fa-solid fa-star text-secondary"></i><i class="fa-solid fa-star text-secondary"></i></p>
+          </div>
+        </div>
+      </div>
+      <div class="card bg-base-100 w-96 shadow-xl" data-aos="fade-up" data-aos-delay="300">
+        <div class="card-body">
+          <h2 class="card-title">Great Value</h2>
+          <p>We got a professional website without breaking the bank. Wanniassa Web offered a competitive price and were upfront about all the costs involved.</p>
+          <div class="card-actions justify-end">
+            <p>- Chris Smith <i class="fa-solid fa-star text-secondary ml-2"></i><i class="fa-solid fa-star text-secondary"></i><i class="fa-solid fa-star text-secondary"></i><i class="fa-solid fa-star text-secondary"></i><i class="fa-solid fa-star text-secondary"></i></p>
+          </div>
+        </div>
+      </div>
+      <div class="card bg-base-100 w-96 shadow-xl" data-aos="fade-up" data-aos-delay="400">
+        <div class="card-body">
+          <h2 class="card-title">Responsive and Helpful</h2>
+          <p>Whenever we had a question or needed help, Wanniassa Web was always quick to respond. They made sure we were happy with every step of the process.</p>
+          <div class="card-actions justify-end">
+            <p>- Jamie O'Connor Cox <i class="fa-solid fa-star text-secondary ml-2"></i><i class="fa-solid fa-star text-secondary"></i><i class="fa-solid fa-star text-secondary"></i><i class="fa-solid fa-star text-secondary"></i><i class="fa-solid fa-star text-secondary"></i></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer w-[100vw] mt-64 border-t-2 text-neutral-content items-center px-4 py-2 ">
+      <aside class="grid-flow-col items-center align-middle">
+        <a class="btn btn-ghost no-underline text-xl align-top">Web Wanniassa</a>
+        <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
+      </aside>
+    </footer>
+    <script>
+      import * as AOS from 'aos';
+      AOS.init();
+    </script>
   </main>
 </Layout>
