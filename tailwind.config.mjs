@@ -6,7 +6,7 @@ export default {
   },
   daisyui: {
     // Add your daisy ui themes here
-    themes: ["night", "light", 'corporate', 'emerald'],
+    themes: ["night"],
   },
   plugins: [require("daisyui"), require("@tailwindcss/typography")],
 };
